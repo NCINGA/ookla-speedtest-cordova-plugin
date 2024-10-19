@@ -12,7 +12,6 @@ android {
 }
 
 dependencies {
-    // implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
     implementation 'com.ookla.speedtest.sdk:speedtest-sdk:3.3.1.10'
     implementation "io.ktor:ktor-client-core:1.6.4"
     implementation 'com.karumi:dexter:6.2.3'

@@ -30,11 +30,20 @@
         </config-file>
 
         <source-file src="src/android/SpeedTest.kt" target-dir="src/main/kotlin/com/ncinga/speedtest" />
+        <source-file src="src/android/CustomTestHandler.kt" target-dir="src/main/kotlin/com/ncinga/speedtest" />
         <source-file src="src/build-extras.gradle" target-dir="app/"/>
-            <source-file src="libs/speedtest-sdk-3.3.1.10.aar" target-dir="libs"/>
-
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.CAMERA"/>
         </config-file>
     </platform>
 </plugin>
