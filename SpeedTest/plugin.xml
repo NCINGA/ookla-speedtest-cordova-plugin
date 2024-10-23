@@ -31,6 +31,8 @@
 
         <source-file src="src/android/SpeedTest.kt" target-dir="src/main/kotlin/com/ncinga/speedtest" />
         <source-file src="src/android/CustomTestHandler.kt" target-dir="src/main/kotlin/com/ncinga/speedtest" />
+        <source-file src="src/android/FileHandler.kt" target-dir="src/main/kotlin/com/ncinga/speedtest" />
+        <source-file src="src/android/FileHandlerService.kt" target-dir="src/main/kotlin/com/ncinga/speedtest" />
         <source-file src="src/build-extras.gradle" target-dir="app/"/>
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.INTERNET" />
@@ -44,6 +46,9 @@
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
             <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
         </config-file>
     </platform>
 </plugin>
