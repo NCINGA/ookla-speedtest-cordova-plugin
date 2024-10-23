@@ -1,0 +1,17 @@
+{
+  "name": "ookla-speedtest",
+  "version": "1.0.2",
+  "description": "Required API key and config",
+  "cordova": {
+    "id": "com.ncinga.speedtest",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "shehan.salinda@ncinga.net",
+  "license": "ISC"
+}

@@ -1,0 +1,30 @@
+
+android {
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/kotlin'            
+        }
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+    }
+}
+
+dependencies {
+    implementation 'com.ookla.speedtest.sdk:speedtest-sdk:3.3.1.10'
+    implementation "io.ktor:ktor-client-core:1.6.4"
+    implementation 'com.karumi:dexter:6.2.3'
+    
+}
+
+repositories {
+     maven {
+          url 'libs/sdk'
+    }
+    flatDir {
+       dirs 'libs'
+    }
+    mavenCentral()
+    google()
+}
